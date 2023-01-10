@@ -1,0 +1,13 @@
+session_name: LAB 
+shell_command_before:
+ - cd ~/ # run as a first command in all panes
+ - tmux set status-style bg=colour11,fg=colour255
+ - tmux set -g message-style fg=white,bold,bg=black
+ - tmux set -g window-status-style fg=black,bg=colour11
+ - clear
+windows:
+ - windows_name: default
+   layout: even-horizontal
+   panes:
+   - focus: 'true'
+   
